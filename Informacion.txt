@@ -1,0 +1,9 @@
+Componentes laravel:
+
+  - Modelos -> Representan la informacion (modelos de BD)
+  - Migraciones -> Versiones de la BD
+  - Controladores -> Las funcionalidades del sistema. Todas las acciones que se realizan
+  - Factorías -> ???
+
+
+Recurso

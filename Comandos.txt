@@ -1,0 +1,20 @@
+** composer run dev -> 
+Inicia el proyecto
+
+** php artisan migrate -> 
+- Se utiliza para ejecutar las nuevas migraciones que generemos. Llamando al metodo up()
+- En este caso, creara la BD (si no existe) 
+- Crea y ejecuta las migraciones: Crea las tablas por defecto necesarias para laravel (como user)
+
+** php artisan make:model Course -mcrf -> (mcrf es migracion, controlador de recursos y factoria)
+- Crea la migracion de la tabla courses, junto con su modelo y controlador
+- Luego debemos ir a la migracion creada, al metodo up(), y agregar los campos que necesitemos en la tabla
+** php artisan migrate ->
+Ejecuta la migracion: En este caso creara la tabla 'courses'
+
+** php artisan migrate:rollback ->
+- Revierte la ultima migracion, lo logra ejecutando el metodo down() de la migracion.
+- Sirve por ej para eliminar la ultima tabla creada, para modificar la migracion modificando o agregando nuevos campos, y ejecutar nuevamente el metodo up() con el comando 'php artisan migrate'
+
+** php artisan migrate:refresh ->
+- Limpia todas las migraciones, borra las tablas, y las vuelve a ejecutar
