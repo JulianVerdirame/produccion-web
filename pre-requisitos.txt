@@ -1,0 +1,6 @@
+Instalar:
+- Xampp -> PHP + Servidor Web (Tambien MySQL)
+- Composer -> Gestor de dependencias PHP
+- Node.js -> Para desarrollo web del lado del servidor. Permite utilizar Javascript en el servidor. Se caracteriza por su modelo de ejecucion asincrono y no bloqueante
+- Git -> Sistema de control de versiones
+- Laravel -> Framework PHP
